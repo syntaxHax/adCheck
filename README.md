@@ -18,6 +18,7 @@ Performs the following Active Directory checks under a standard domain user cont
 
 Compile with Developer Command Prompt:
 - be sure to have the "Desktop development with C++" workload installed via "Visual Studio Installer"
+
 `cl /FeadCheck.exe adCheck.cpp /TP /EHsc /DWIN32_LEAN_AND_MEAN /D_WIN32_WINNT=0x0A00 /link netapi32.lib wldap32.lib advapi32.lib ws2_32.lib shlwapi.lib mpr.lib secur32.lib`
 
 Special notes re OUTBOUND SMB CHECK:
@@ -27,4 +28,5 @@ Special notes re OUTBOUND SMB CHECK:
     - share name: k49La4fg1
 
 - launch an smb server via impacket:
+
 `python3 smbserver.py k49La4fg1 /home/pentester/tmp -debug -smb2support`
