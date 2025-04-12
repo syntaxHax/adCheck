@@ -14,7 +14,7 @@ Performs the following Active Directory checks under a standard domain user cont
 - Check domain lockout policy.
 - Enumerate domain computers to see if OS is unsupported.
 - Check insecure SMB settings (basic SMB negotiation).
-- Detect if any ADCS servers are in the domain.
+- Detect if any ADCS servers are in the domain and determine if they are vulnerable (ESC1-8)
 
 Compile with Developer Command Prompt:
 - be sure to have the "Desktop development with C++" workload installed via "Visual Studio Installer"
