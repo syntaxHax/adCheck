@@ -21,7 +21,7 @@ cl /FeadCheck.exe adCheck.cpp /TP /EHsc /DWIN32_LEAN_AND_MEAN /D_WIN32_WINNT=0x0
 
 Special notes re OUTBOUND SMB CHECK:
 - hard coded values (if no arguments are specified):
-    - primary dns: backdoor.test.ca
+    - primary dns: smb.test.ca
     - backup ip: 10.10.10.10
     - share name: k49La4fg1
 
@@ -697,7 +697,7 @@ void CheckOutboundSMB(const char* customShareName)
         return;
     }
 
-    const char* smbHost = "backdoor.test.ca";
+    const char* smbHost = "smb.test.ca";
     const char* smbFallbackIP = "10.10.10.10";
     const char* shareName = customShareName ? customShareName : "k49La4fg1";
 
