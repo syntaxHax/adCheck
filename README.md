@@ -11,7 +11,7 @@ Performs the following Active Directory checks under a standard domain user cont
 - Search LDAP attributes for sensitive info.
 - Check domain trusts.
 - Check LDAP security config (signing, channel binding).
-- Check domain lockout policy.
+- Check domain lockout and password policy.
 - Enumerate domain computers to see if OS is unsupported.
 - Check insecure SMB settings (basic SMB negotiation).
 - Detect if any ADCS servers are in the domain and determine if they are vulnerable (ESC1-8)
