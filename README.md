@@ -23,7 +23,7 @@ Compile with Developer Command Prompt:
 
 Special notes re OUTBOUND SMB CHECK:
 - hard coded values (if no arguments are specified):
-    - primary dns: backdoor.test.ca
+    - primary dns: smb.test.ca
     - backup ip: 10.10.10.10
     - share name: k49La4fg1
 
